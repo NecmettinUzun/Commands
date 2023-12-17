@@ -9,3 +9,6 @@ https://gitexplorer.com/
 
 ## Exclude add(--all)
 > git add --all -- :!.settings/* :!.settings :!.classpath
+
+## Git hard reset
+> git reset --hard HEAD
