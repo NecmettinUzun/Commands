@@ -8,4 +8,4 @@ https://gitexplorer.com/
 > git checkout branchName
 
 ## Exclude add(--all)
-git add --all -- :!.settings/* :!.settings :!.classpath
+> git add --all -- :!.settings/* :!.settings :!.classpath
