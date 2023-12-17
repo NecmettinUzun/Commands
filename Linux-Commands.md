@@ -1,4 +1,5 @@
-# Print Thread list of any Java app
+# App Analysis
+## Show Thread list
 > jcmd <-PID-> Thread.print
 
 # String update into the file
