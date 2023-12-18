@@ -10,3 +10,6 @@
 
 ## Create Topic
 > ./kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 13 --topic my-topic
+
+## Monitor Topic
+> ./kafka-console-consumer.sh --zookeeper localhost:2181 --topic my-topic	
