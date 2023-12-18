@@ -9,5 +9,6 @@
 # Grep-awk
 > df -h | grep home
 > > /dev/mapper/centos-home   46G  510M   45G   2% /home
+> > 
 > df -h | grep home | awk '{print $4}'
 > > 45G
