@@ -16,6 +16,8 @@
 # Grep-cut
 > df -h | grep home
 > > /dev/mapper/centos-home   46G  510M   45G   2% /home
->
+> 
+> Getting between 39-42 characters
+> 
 > df -h | grep home | cut -c39-42
 > > 45G
