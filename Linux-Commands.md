@@ -5,6 +5,7 @@
 # File Operation
 ## String update into the file
 > sed -i 's/old_string/new_string/g' file
+## Copy lines from file to another
 
 # Grep-awk
 > df -h | grep home
