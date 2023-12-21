@@ -59,6 +59,11 @@
 > df -h | grep home | cut -c39-42
 > > 45G
 
+> ## Grep-before&after
+> grep -A 1 -B 1 "serchedText"  entity.properties
+>
+> - B: before 1 line
+> - A: after 1 line
 
  # Memory Usage
 > ## Memory usage for all app
