@@ -13,6 +13,8 @@
 > 30186 38040  18  0.0
 >
 > - convert 30186 value to hex and search it in the thread dump
+> ## Getting histogram
+> jcmd <-PID-> GC.class_histogram > /root/histo.txt  
 
 
 # File Operation
