@@ -7,3 +7,6 @@
 
 # Update password
 > SET PASSWORD FOR 'reader'@'%' = PASSWORD('12345');
+
+# MySQL Dump
+> mysqldump --user=user --password=pass-f  conf_db  --ignore-table=conf_db.event_history  > /home/mysql_confdb_backup.sql
