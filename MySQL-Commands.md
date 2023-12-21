@@ -10,3 +10,6 @@
 
 # MySQL Dump
 > mysqldump --user=user --password=pass-f  conf_db  --ignore-table=conf_db.event_history  > /home/mysql_confdb_backup.sql
+
+# Optimize table size
+> optimize table table_name;
