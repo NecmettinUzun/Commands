@@ -30,6 +30,17 @@
 > dd if=/dev/zero of=/var/lib/mysql/testfile.1.img bs=8000 count=280000
 > ## File copy
 > scp -r user@x.x.x.x:/home/test.jar .
+> ## File permision definitions
+> chmod u=rwx,g=rx,o=r myfile
+> 
+> chmod 754 myfile
+> - 4 stands for "read",
+> - 2 stands for "write",
+> - 1 stands for "execute", and
+> - 0 stands for "no permission."
+>   
+> So 7 is the combination of permissions 4+2+1 (read, write, and execute), 5 is 4+0+1 (read, no write, and execute), and 4 is 4+0+0 (read, no write, and no execute).
+
 
 # Searching
 > ## Grep-awk
