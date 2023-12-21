@@ -1,6 +1,8 @@
 # App Analysis
 ## Show Thread list
 > jcmd <-PID-> Thread.print
+## Thread dump
+> jmap -dump:format=b,file=/home/heap.bin <PID>
 
 # File Operation
 ## String update into the file
