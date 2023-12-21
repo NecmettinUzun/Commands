@@ -28,6 +28,8 @@
 > find . -name "*.gclog" -mtime +20 -exec ls -ltr {} \;
 > ## Create large size file
 > dd if=/dev/zero of=/var/lib/mysql/testfile.1.img bs=8000 count=280000
+> ## File copy
+> scp -r user@x.x.x.x:/home/test.jar .
 
 # Searching
 > ## Grep-awk
