@@ -77,3 +77,6 @@ If it meets the condition, write the 5th line and split it according to the '%' 
  # Memory Usage
 > ## Memory usage for all app
 > ps -eo pmem,pid,pcpu,rss,vsize,args | sort -k 1 -r | head -10
+
+# Date
+> date +%x_%H:%M:%S:%N
