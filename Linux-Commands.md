@@ -18,7 +18,14 @@
 # File Operation
 > ## String update into the file
 > sed -i 's/old_string/new_string/g' file
-> ## Copy lines from file to another
+> ## Find, Delete, List
+>  - Delete files that is created 30 minute ago
+> 
+> find /home/test -type f -mmin +30 -exec rm -f {} \;
+>
+>  - List files that is created 20 days ago
+>
+> find . -name "*.gclog" -mtime +20 -exec ls -ltr {} \;
 
 # Searching
 > ## Grep-awk
@@ -38,6 +45,6 @@
 > > 45G
 
 
-> # Memory Usage
+ # Memory Usage
 > ## Memory usage for all app
 > ps -eo pmem,pid,pcpu,rss,vsize,args | sort -k 1 -r | head -10
