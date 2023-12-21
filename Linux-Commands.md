@@ -1,8 +1,10 @@
 # App Analysis
 ## Show Thread list
 > jcmd <-PID-> Thread.print
-## Thread dump
+## Thread dump and open it
 > jmap -dump:format=b,file=/home/heap.bin <PID>
+> 
+> ./jhat -J-Xmx10240m -port 80 /home/heap.bin
 
 # File Operation
 ## String update into the file
