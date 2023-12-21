@@ -51,6 +51,13 @@
 > > 
 > df -h | grep home | awk '{print $4}'
 > > 45G
+> 
+> awk -F'|' '{if ($31==2 && $33==56 && substr($27,1,2)!=90) print $0}'
+> - substr($27,1,2) : getting first and second characters of 27th line
+>
+> df -lh | awk '{if ($6 == "/") { print $5 }}'|  cut -d'%' -f1
+> - get df -lh output 6th column in any line
+If it meets the condition, write the 5th line and split it according to the '%' character and print the first value.
 
 > ## Grep-cut
 > df -h | grep home
