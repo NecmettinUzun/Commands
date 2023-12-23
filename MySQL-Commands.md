@@ -13,3 +13,6 @@
 
 # Optimize table size
 > optimize table table_name;
+
+# Checking any column exist or not
+> SELECT EXISTS(SELECT 1 FROM hosts WHERE address = "xxx") AS myCheck 
