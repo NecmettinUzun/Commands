@@ -80,3 +80,6 @@ If it meets the condition, write the 5th line and split it according to the '%' 
 
 # Date
 > date +%x_%H:%M:%S:%N
+
+# Java
+> -Dspring.config.location=resources/application.properties
