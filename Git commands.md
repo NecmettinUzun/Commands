@@ -5,7 +5,7 @@ https://gitexplorer.com/
 > git branch -d localBranchName
 
 ## Switch another branch
-> git checkout branchName
+> git checkout branch-name
 
 ## Exclude add(--all)
 > git add --all -- :!.settings/* :!.settings :!.classpath
